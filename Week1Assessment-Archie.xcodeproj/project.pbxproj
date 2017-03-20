@@ -13,6 +13,7 @@
 		2132D37C1E7F7AC700DA6E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2132D37A1E7F7AC700DA6E83 /* Main.storyboard */; };
 		2132D37E1E7F7AC700DA6E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2132D37D1E7F7AC700DA6E83 /* Assets.xcassets */; };
 		2132D3811E7F7AC700DA6E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2132D37F1E7F7AC700DA6E83 /* LaunchScreen.storyboard */; };
+		2132D38A1E7F7E4500DA6E83 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2132D3891E7F7E4500DA6E83 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2132D37D1E7F7AC700DA6E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2132D3801E7F7AC700DA6E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2132D3821E7F7AC700DA6E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2132D3881E7F7E4500DA6E83 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2132D3891E7F7E4500DA6E83 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				2132D3771E7F7AC700DA6E83 /* ViewController.h */,
 				2132D3781E7F7AC700DA6E83 /* ViewController.m */,
 				2132D37A1E7F7AC700DA6E83 /* Main.storyboard */,
+				2132D3881E7F7E4500DA6E83 /* WebViewController.h */,
+				2132D3891E7F7E4500DA6E83 /* WebViewController.m */,
 				2132D37D1E7F7AC700DA6E83 /* Assets.xcassets */,
 				2132D37F1E7F7AC700DA6E83 /* LaunchScreen.storyboard */,
 				2132D3821E7F7AC700DA6E83 /* Info.plist */,
@@ -154,6 +159,7 @@
 				2132D3791E7F7AC700DA6E83 /* ViewController.m in Sources */,
 				2132D3761E7F7AC700DA6E83 /* AppDelegate.m in Sources */,
 				2132D3731E7F7AC700DA6E83 /* main.m in Sources */,
+				2132D38A1E7F7E4500DA6E83 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +318,7 @@
 				2132D3871E7F7AC700DA6E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

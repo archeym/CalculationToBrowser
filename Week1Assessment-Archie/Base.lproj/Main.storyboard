@@ -1,26 +1,235 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dsd-Ru-Fo2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Google-->
+        <scene sceneID="SAV-Um-qTX">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="Ske-dQ-je0" customClass="WebViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="ZyF-8C-ej9"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUt-8O-4Lo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="sTx-OH-1Ph">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBI-8d-n8R">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uUt-8O-4Lo" firstAttribute="top" secondItem="kBI-8d-n8R" secondAttribute="bottom" id="74g-GW-stj"/>
+                            <constraint firstItem="kBI-8d-n8R" firstAttribute="leading" secondItem="sTx-OH-1Ph" secondAttribute="leadingMargin" id="Rcd-eE-49W"/>
+                            <constraint firstItem="kBI-8d-n8R" firstAttribute="top" secondItem="ZyF-8C-ej9" secondAttribute="bottom" id="j7g-lq-fbh"/>
+                            <constraint firstItem="kBI-8d-n8R" firstAttribute="trailing" secondItem="sTx-OH-1Ph" secondAttribute="trailingMargin" id="mug-Bx-Rqc"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Google" image="google" id="3Eq-1u-CDY"/>
+                    <connections>
+                        <outlet property="googleBar" destination="sTx-OH-1Ph" id="xTb-aA-nvs"/>
+                        <outlet property="webView" destination="kBI-8d-n8R" id="e3a-NK-iuB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrA-BA-Nwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1068" y="747"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HcL-gx-J0M">
+            <objects>
+                <viewController id="IwZ-XM-1XP" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kPE-BP-AqL"/>
+                        <viewControllerLayoutGuide type="bottom" id="le3-Tn-mHC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GIA-Ex-KC7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmy-C1-M7i">
+                                <rect key="frame" x="131" y="330" width="113" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="...">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Cochin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TOQ-mf-a4Z">
+                                <rect key="frame" x="66" y="460" width="243" height="108"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CWE-Dm-3U4">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-5z-a3O" userLabel="+">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="54"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="+">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="36" name=".SFNSText"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjU-YY-KEr">
+                                                <rect key="frame" x="121.5" y="0.0" width="121.5" height="54"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="-">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="36" name=".SFNSText"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="H76-G5-Npn">
+                                        <rect key="frame" x="0.0" y="54" width="243" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ez6-YV-hHx">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="54"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="÷">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="36" name=".SFNSText"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qPu-Py-Dur">
+                                                <rect key="frame" x="121.5" y="0.0" width="121.5" height="54"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="x">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="36" name=".SFNSText"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDm-I4-KeS">
+                                <rect key="frame" x="16" y="174" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oke-fU-8uU">
+                                <rect key="frame" x="16" y="238" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qmy-C1-M7i" firstAttribute="top" secondItem="oke-fU-8uU" secondAttribute="bottom" constant="62" id="0r1-yn-Y1q"/>
+                            <constraint firstItem="oke-fU-8uU" firstAttribute="top" secondItem="IDm-I4-KeS" secondAttribute="bottom" constant="34" id="9mH-aC-1DB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qmy-C1-M7i" secondAttribute="trailing" constant="115" id="B3s-Ph-j8T"/>
+                            <constraint firstItem="qmy-C1-M7i" firstAttribute="leading" secondItem="GIA-Ex-KC7" secondAttribute="leadingMargin" constant="115" id="DJ6-OA-vfY"/>
+                            <constraint firstItem="IDm-I4-KeS" firstAttribute="trailing" secondItem="GIA-Ex-KC7" secondAttribute="trailingMargin" id="GB7-l2-bD6"/>
+                            <constraint firstItem="TOQ-mf-a4Z" firstAttribute="top" secondItem="qmy-C1-M7i" secondAttribute="bottom" constant="109" id="T8z-Mp-Pnb"/>
+                            <constraint firstItem="oke-fU-8uU" firstAttribute="leading" secondItem="GIA-Ex-KC7" secondAttribute="leadingMargin" id="h98-1L-8ZU"/>
+                            <constraint firstItem="le3-Tn-mHC" firstAttribute="top" secondItem="TOQ-mf-a4Z" secondAttribute="bottom" constant="50" id="jXW-FT-6pX"/>
+                            <constraint firstItem="IDm-I4-KeS" firstAttribute="leading" secondItem="GIA-Ex-KC7" secondAttribute="leadingMargin" id="jd8-pl-fEC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TOQ-mf-a4Z" secondAttribute="trailing" constant="50" id="oHt-dt-hMS"/>
+                            <constraint firstItem="oke-fU-8uU" firstAttribute="trailing" secondItem="GIA-Ex-KC7" secondAttribute="trailingMargin" id="qTr-5t-xFJ"/>
+                            <constraint firstItem="TOQ-mf-a4Z" firstAttribute="leading" secondItem="GIA-Ex-KC7" secondAttribute="leadingMargin" constant="50" id="t0q-he-Dll"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aqy-A2-7Eg"/>
+                    <connections>
+                        <outlet property="label" destination="qmy-C1-M7i" id="RIf-CP-OI9"/>
+                        <outlet property="textField1" destination="IDm-I4-KeS" id="GVj-Aj-6SG"/>
+                        <outlet property="textField2" destination="oke-fU-8uU" id="Gu9-bm-nNc"/>
+                        <outletCollection property="buttons" destination="fjU-YY-KEr" id="Vmm-tm-oCI"/>
+                        <outletCollection property="buttons" destination="ez6-YV-hHx" id="L45-Ut-OlL"/>
+                        <outletCollection property="buttons" destination="qPu-Py-Dur" id="is8-RT-omw"/>
+                        <outletCollection property="buttons" destination="Lmu-5z-a3O" id="IIM-c5-4o0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvv-W7-nZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.8" y="-69.715142428785612"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="phG-LZ-hDl">
+            <objects>
+                <tabBarController id="Dsd-Ru-Fo2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="H6L-XK-voO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WJd-0G-x3l" kind="relationship" relationship="viewControllers" id="U5W-sf-ldg"/>
+                        <segue destination="Ske-dQ-je0" kind="relationship" relationship="viewControllers" id="B4o-kw-4lu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtJ-ld-aJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="278"/>
+        </scene>
+        <!--Calculation-->
+        <scene sceneID="bPf-1w-cfU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WJd-0G-x3l" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calculation" image="calculate" id="osC-Ag-cmv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OuQ-kp-vGA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IwZ-XM-1XP" kind="relationship" relationship="rootViewController" id="Eno-6q-Nbx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pm4-5E-EZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="-68.815592203898049"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calculate" width="24" height="24"/>
+        <image name="google" width="24" height="24"/>
+    </resources>
 </document>
